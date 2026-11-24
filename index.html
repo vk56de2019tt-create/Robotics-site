@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[TEAM NAME] Robotics | [FTC/FRC TEAM NUMBER]</title>
+    <meta
+      name="description"
+      content="[TEAM NAME] ([FTC/FRC TEAM NUMBER]) is a student-led competitive robotics team in [CITY, STATE] building custom competition robots and advancing STEM outreach."
+    />
+    <meta property="og:title" content="[TEAM NAME] Robotics | [FTC/FRC TEAM NUMBER]" />
+    <meta
+      property="og:description"
+      content="Competitive robotics engineering, CAD documentation, community STEM outreach, and sponsorships."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/content.js"></script>
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header id="site-header" class="site-header"></header>
+
+    <main id="main-content">
+      <!-- Hero Section (Dark Obsidian Architectural Canvas) -->
+      <section class="hero surface-dark">
+        <div class="container">
+          <div class="hero-split">
+            <div class="hero-copy">
+              <div class="hero-brand-lockup">
+                <img
+                  class="team-logo-slot"
+                  src="assets/icons/team-mark.svg"
+                  alt="[TEAM NAME] logo placeholder"
+                  width="52"
+                  height="52"
+                />
+                <div class="kicker">
+                  <span data-token="teamNumber">[FTC/FRC TEAM NUMBER]</span>
+                  <span aria-hidden="true">·</span>
+                  <span data-token="location">[CITY, STATE]</span>
+                  <span aria-hidden="true">·</span>
+                  <span data-token="season">[CURRENT SEASON]</span>
+                </div>
+              </div>
+
+              <h1 data-home="headline">
+                Engineering competition robotics with discipline and purpose.
+              </h1>
+
+              <p class="lead" data-home="intro">
+                [TEAM NAME] ([FTC/FRC TEAM NUMBER]) is a student-driven robotics organization in
+                [CITY, STATE] preparing for the [CURRENT SEASON] season through iterative CAD,
+                custom machining, and community outreach.
+              </p>
+
+              <div class="cta-row">
+                <a class="btn btn-primary" href="robot.html">Explore [ROBOT NAME]</a>
+                <a class="btn btn-secondary" href="sponsors.html">Partner With Us</a>
+              </div>
+            </div>
+
+            <div id="home-hero-media" class="hero-media"></div>
+          </div>
+
+          <!-- Full-Width Key Statistics Strip Below Hero Split -->
+          <div id="home-kpi-strip" class="kpi-strip" aria-label="Team Key Metrics"></div>
+        </div>
+      </section>
+
+      <!-- Mission & Featured Robot (Crisp Gallery White Contrast Section) -->
+      <section class="section surface-light reveal">
+        <div class="container">
+          <div class="section-header-split">
+            <div class="section-header" style="margin-bottom:0;">
+              <div class="kicker">
+                <span>01. Organization &amp; Platform</span>
+                <span aria-hidden="true">·</span>
+                <span data-token="season">[CURRENT SEASON]</span>
+              </div>
+              <h2>Built by students. Verified on the competition field.</h2>
+            </div>
+            <a class="btn btn-secondary" href="about.html">About the Team</a>
+          </div>
+
+          <div class="bento-grid">
+            <article class="card col-span-6" style="justify-content:space-between;">
+              <div>
+                <div class="kicker" style="margin-bottom:10px;">Mission Statement</div>
+                <h3 style="margin-bottom:14px;">Purpose &amp; Engineering Standards</h3>
+                <p data-token="mission" style="color:var(--text-light-secondary);margin-bottom:24px;">
+                  [TEAM MISSION] Sample mission statement — Replace with your organization's verified
+                  mission, engineering philosophy, and community commitment.
+                </p>
+              </div>
+              <div id="home-robot-specs"></div>
+            </article>
+
+            <article class="card card-flush col-span-6">
+              <div id="home-robot-preview-media"></div>
+              <div class="card-body">
+                <div class="meta-line">
+                  <span data-token="robotName">[ROBOT NAME]</span>
+                  <span aria-hidden="true">·</span>
+                  <span>Featured Competition Platform</span>
+                </div>
+                <h3>Technical Subsystem Overview</h3>
+                <p data-home="robotSummary" style="color:var(--text-light-secondary);">
+                  Meet [ROBOT NAME], our [CURRENT SEASON] competition platform engineered around
+                  modular serviceability, closed-loop motion control, and documented CAD revisions.
+                </p>
+                <div class="cta-row" style="margin-top:auto;padding-top:8px;">
+                  <a class="btn btn-primary btn-sm" href="robot.html">View Robot Breakdown</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Achievements Preview (Dark Obsidian Section) -->
+      <section class="section surface-dark reveal">
+        <div class="container">
+          <div class="section-header-split">
+            <div class="section-header" style="margin-bottom:0;">
+              <div class="kicker">
+                <span>02. Competition Track Record</span>
+                <span aria-hidden="true">·</span>
+                <span>Placeholder Records</span>
+              </div>
+              <h2>Competition milestones &amp; judged awards.</h2>
+            </div>
+            <a class="btn btn-secondary" href="achievements.html">View Full History</a>
+          </div>
+
+          <div id="home-achievements-preview" class="grid-3"></div>
+        </div>
+      </section>
+
+      <!-- Outreach & STEM Community Preview (Crisp White Section) -->
+      <section class="section surface-light reveal">
+        <div class="container">
+          <div class="section-header-split">
+            <div class="section-header" style="margin-bottom:0;">
+              <div class="kicker">
+                <span>03. Community Impact</span>
+                <span aria-hidden="true">·</span>
+                <span data-token="location">[CITY, STATE]</span>
+              </div>
+              <h2>Expanding hands-on STEM beyond the workshop.</h2>
+            </div>
+            <a class="btn btn-secondary" href="outreach.html">Explore Outreach</a>
+          </div>
+
+          <div id="home-outreach-preview" class="grid-3"></div>
+        </div>
+      </section>
+
+      <!-- Sponsors & Contact CTA Band (Dark Obsidian Closing Section) -->
+      <section class="section surface-dark reveal">
+        <div class="container">
+          <div class="section-header-split">
+            <div class="section-header" style="margin-bottom:0;">
+              <div class="kicker">
+                <span>04. Partners &amp; Support</span>
+                <span aria-hidden="true">·</span>
+                <span>Sponsor Placeholders</span>
+              </div>
+              <h2>Backed by community and industry partners.</h2>
+            </div>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="sponsors.html">Sponsorship Tiers</a>
+              <a class="btn btn-secondary" href="contact.html">Contact Team</a>
+            </div>
+          </div>
+
+          <div id="home-sponsor-preview" class="grid-4"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+  </body>
+</html>

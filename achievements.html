@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achievements &amp; History | [TEAM NAME] Robotics</title>
+    <meta
+      name="description"
+      content="Competition history, tournament rankings, judged awards, and season-by-season milestones for [TEAM NAME] ([FTC/FRC TEAM NUMBER])."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/content.js"></script>
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body data-page="achievements">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header id="site-header" class="site-header"></header>
+
+    <main id="main-content">
+      <!-- Page Hero -->
+      <section class="page-hero surface-dark">
+        <div class="container">
+          <div class="page-hero-grid">
+            <div>
+              <div class="kicker" style="margin-bottom:14px;">
+                <span>Competition Archive</span>
+                <span aria-hidden="true">·</span>
+                <span data-token="teamNumber">[FTC/FRC TEAM NUMBER]</span>
+              </div>
+              <h1>Season records, tournament placements &amp; judged awards.</h1>
+            </div>
+            <div class="page-hero-aside">
+              <div class="meta-line"><span>Verification Notice</span></div>
+              <p data-achievements="intro" style="font-size:0.9rem;color:var(--text-dark-secondary);">
+                [COMPETITION RESULTS] Placeholder archive awaiting verified event logs.
+              </p>
+            </div>
+          </div>
+
+          <div
+            id="achievements-stats"
+            class="kpi-strip"
+            aria-label="Competition Metric Placeholders"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Season-by-Season Competition Timeline -->
+      <section class="section surface-light reveal">
+        <div class="container">
+          <div class="section-header-split">
+            <div class="section-header" style="margin-bottom:0;">
+              <div class="kicker">01. Tournament Log</div>
+              <h2>Season-by-season results</h2>
+            </div>
+            <div
+              id="achievements-season-filters"
+              class="filter-bar"
+              role="group"
+              aria-label="Filter competition results by season"
+            ></div>
+          </div>
+
+          <div id="achievements-seasons-list"></div>
+        </div>
+      </section>
+
+      <!-- Awards & Recognition Showcase -->
+      <section class="section surface-dark reveal">
+        <div class="container">
+          <div class="section-header">
+            <div class="kicker">02. Recognition</div>
+            <h2>Judged awards &amp; competition honors</h2>
+            <p class="lead">
+              Add award photographs in assets/images/awards/ and update award titles in
+              assets/js/content.js.
+            </p>
+          </div>
+          <div id="achievements-awards-grid" class="grid-3"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+  </body>
+</html>

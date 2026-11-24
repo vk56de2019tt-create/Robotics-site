@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | [TEAM NAME] Robotics</title>
+    <meta
+      name="description"
+      content="Contact [TEAM NAME] ([FTC/FRC TEAM NUMBER]) for student recruitment, corporate sponsorships, community workshops, and competition inquiries."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/content.js"></script>
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body data-page="contact">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header id="site-header" class="site-header"></header>
+
+    <main id="main-content">
+      <!-- Page Hero -->
+      <section class="page-hero surface-dark">
+        <div class="container">
+          <div class="page-hero-grid">
+            <div>
+              <div class="kicker" style="margin-bottom:14px;">
+                <span>Contact &amp; Inquiries</span>
+                <span aria-hidden="true">·</span>
+                <span data-token="location">[CITY, STATE]</span>
+              </div>
+              <h1>Connect with our team, mentors, and leads.</h1>
+            </div>
+            <div class="page-hero-aside">
+              <div class="meta-line"><span>Direct Communication</span></div>
+              <p data-contact="intro" style="font-size:0.9rem;color:var(--text-dark-secondary);">
+                Connect with [TEAM NAME] regarding membership, sponsorships, or outreach.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Direct Email Channels -->
+      <section class="section surface-light reveal">
+        <div class="container">
+          <div class="section-header">
+            <div class="kicker">01. Direct Channels</div>
+            <h2>Dedicated team contacts</h2>
+            <p class="lead">
+              Update email placeholders in assets/js/content.js before deploying to GitHub Pages.
+            </p>
+          </div>
+
+          <div id="contact-channels-grid" class="grid-3"></div>
+        </div>
+      </section>
+
+      <!-- Honest Email Draft Composer + Location / Socials -->
+      <section class="section surface-dark reveal">
+        <div class="container">
+          <div class="grid-2" style="gap:40px;align-items:start;">
+            <div class="card">
+              <div class="kicker">02. Message Composer</div>
+              <h2>Draft an email directly</h2>
+              <p style="color:var(--text-dark-secondary);font-size:0.9375rem;">
+                Because this is a static GitHub Pages site without a backend mail server, submitting
+                below opens a pre-addressed draft in your default email application. (To enable an
+                in-page form backend later, connect a service such as Formspree to the form action.)
+              </p>
+
+              <form id="contact-mailto-composer" style="display:flex;flex-direction:column;gap:16px;" novalidate>
+                <div class="field-grid">
+                  <div class="field">
+                    <label for="sender-name">Your Name</label>
+                    <input id="sender-name" name="name" type="text" placeholder="Full name or organization" required />
+                  </div>
+                  <div class="field">
+                    <label for="inquiry-topic">Inquiry Topic</label>
+                    <select id="inquiry-topic" name="topic">
+                      <option value="General">General Inquiry</option>
+                      <option value="Sponsorship">Sponsorship / Partnership</option>
+                      <option value="Recruitment">Student Recruitment / Mentorship</option>
+                      <option value="Outreach">Outreach / Workshop Request</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="sender-message">Message</label>
+                  <textarea
+                    id="sender-message"
+                    name="message"
+                    rows="5"
+                    placeholder="Share details about your inquiry, event dates, or sponsorship interest..."
+                    required
+                  ></textarea>
+                </div>
+
+                <div id="contact-form-feedback" class="form-feedback" role="status" hidden></div>
+
+                <div>
+                  <button type="submit" class="btn btn-primary">Open Email Draft</button>
+                </div>
+              </form>
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:24px;">
+              <article class="card">
+                <div class="kicker">Workshop &amp; Schedule</div>
+                <h3>Meeting Details</h3>
+                <dl class="detail-dl" style="margin-top:6px;">
+                  <dt>Location</dt>
+                  <dd data-contact="address">[SCHOOL / LAB / WORKSHOP ADDRESS, CITY, STATE]</dd>
+                  <dt>Hours</dt>
+                  <dd data-contact="schedule">[MEETING DAYS &amp; HOURS]</dd>
+                </dl>
+              </article>
+
+              <article class="card">
+                <div class="kicker">Social Channels</div>
+                <h3>Follow our season updates</h3>
+                <div id="contact-socials-list"></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+  </body>
+</html>

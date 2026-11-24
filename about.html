@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About the Team | [TEAM NAME] Robotics</title>
+    <meta
+      name="description"
+      content="Learn about [TEAM NAME] ([FTC/FRC TEAM NUMBER]): origin story, engineering philosophy, student leadership, members, and mentors."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/content.js"></script>
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body data-page="about">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header id="site-header" class="site-header"></header>
+
+    <main id="main-content">
+      <!-- Page Hero -->
+      <section class="page-hero surface-dark">
+        <div class="container">
+          <div class="page-hero-grid">
+            <div>
+              <div class="kicker" style="margin-bottom:14px;">
+                <span>About the Organization</span>
+                <span aria-hidden="true">·</span>
+                <span data-token="teamNumber">[FTC/FRC TEAM NUMBER]</span>
+              </div>
+              <h1>A student-led engineering organization built on iteration.</h1>
+            </div>
+            <div class="page-hero-aside">
+              <div class="meta-line"><span>Location</span></div>
+              <strong data-token="location">[CITY, STATE]</strong>
+              <p data-about="intro" style="font-size:0.9rem;color:var(--text-dark-secondary);">
+                [TEAM NAME] brings together students across mechanical design, electrical systems,
+                embedded software, and team operations.
+              </p>
+            </div>
+          </div>
+
+          <div id="about-group-photo" class="card card-flush" style="margin-top:40px;"></div>
+        </div>
+      </section>
+
+      <!-- Mission, Origin Story & History Timeline -->
+      <section class="section surface-light reveal">
+        <div class="container">
+          <div class="grid-2" style="margin-bottom:64px;">
+            <article class="card">
+              <div class="kicker">Origin Story</div>
+              <h2>Team History</h2>
+              <p data-about="origin" style="color:var(--text-light-secondary);">
+                [TEAM HISTORY] Sample origin story placeholder.
+              </p>
+            </article>
+            <article class="card">
+              <div class="kicker">Philosophy</div>
+              <h2>Mission &amp; Engineering Process</h2>
+              <p data-token="mission" style="color:var(--text-light-secondary);margin-bottom:12px;">
+                [TEAM MISSION]
+              </p>
+              <p data-about="philosophy" style="color:var(--text-light-secondary);">
+                Every subsystem is prototyped, documented in CAD, and reviewed before competition.
+              </p>
+            </article>
+          </div>
+
+          <div class="section-header">
+            <div class="kicker">Organization Timeline</div>
+            <h2>Milestones across seasons</h2>
+          </div>
+          <div id="about-history-timeline" class="timeline"></div>
+        </div>
+      </section>
+
+      <!-- Student Leadership -->
+      <section class="section surface-dark reveal">
+        <div class="container">
+          <div class="section-header">
+            <div class="kicker">01. Student Leadership</div>
+            <h2>Subteam leads &amp; captains</h2>
+            <p class="lead">
+              Replace each profile card below in assets/js/content.js and supply portraits in
+              assets/images/team/.
+            </p>
+          </div>
+          <div id="about-leadership-grid" class="grid-3"></div>
+        </div>
+      </section>
+
+      <!-- Team Members with Interactive Subteam Filters -->
+      <section class="section surface-light reveal">
+        <div class="container">
+          <div class="section-header-split">
+            <div class="section-header" style="margin-bottom:0;">
+              <div class="kicker">02. Active Roster</div>
+              <h2>Engineering &amp; operations members</h2>
+            </div>
+            <div id="about-subteam-filters" class="filter-bar" role="group" aria-label="Filter members by subteam"></div>
+          </div>
+          <div id="about-members-grid" class="grid-3"></div>
+        </div>
+      </section>
+
+      <!-- Mentors & Advisors -->
+      <section class="section surface-dark reveal">
+        <div class="container">
+          <div class="section-header">
+            <div class="kicker">03. Mentorship</div>
+            <h2>Technical mentors &amp; faculty advisors</h2>
+          </div>
+          <div id="about-mentors-grid" class="grid-3"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+  </body>
+</html>

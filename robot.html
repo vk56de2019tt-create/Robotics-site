@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Robot — [ROBOT NAME] | [TEAM NAME] Robotics</title>
+    <meta
+      name="description"
+      content="Technical breakdown of [ROBOT NAME] for the [CURRENT SEASON] season: drivetrain, intake, scoring mechanisms, electronics, software, and CAD."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/content.js"></script>
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body data-page="robot">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header id="site-header" class="site-header"></header>
+
+    <main id="main-content">
+      <!-- Robot Hero -->
+      <section class="page-hero surface-dark">
+        <div class="container">
+          <div class="page-hero-grid">
+            <div>
+              <div class="kicker" style="margin-bottom:14px;">
+                <span>Robot Technical Dossier</span>
+                <span aria-hidden="true">·</span>
+                <span data-token="season">[CURRENT SEASON]</span>
+              </div>
+              <h1 data-token="robotName">[ROBOT NAME]</h1>
+            </div>
+            <div class="page-hero-aside">
+              <div class="meta-line"><span>Platform Summary</span></div>
+              <p data-robot="overview" style="font-size:0.9rem;color:var(--text-dark-secondary);">
+                [ROBOT SPECIFICATIONS] Sample robot overview.
+              </p>
+            </div>
+          </div>
+
+          <div id="robot-hero-media" class="card card-flush" style="margin-top:40px;"></div>
+          <div id="robot-quick-specs" class="kpi-strip" aria-label="Robot Headline Specifications"></div>
+        </div>
+      </section>
+
+      <!-- Full Specification Table -->
+      <section class="section surface-light reveal">
+        <div class="container">
+          <div class="section-header">
+            <div class="kicker">01. Hardware &amp; Software Matrix</div>
+            <h2>Verified specification sheet</h2>
+            <p class="lead">
+              Placeholder specifications structured for inspection readiness and engineering portfolio
+              documentation.
+            </p>
+          </div>
+
+          <div class="spec-table-wrap">
+            <table class="spec-table">
+              <thead>
+                <tr>
+                  <th scope="col">Parameter</th>
+                  <th scope="col">Specification</th>
+                  <th scope="col">Documentation Notes</th>
+                </tr>
+              </thead>
+              <tbody id="robot-spec-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Expandable Subsystem Breakdown -->
+      <section class="section surface-dark reveal">
+        <div class="container">
+          <div class="section-header-split">
+            <div class="section-header" style="margin-bottom:0;">
+              <div class="kicker">02. Architecture Breakdown</div>
+              <h2>Mechanical, electrical &amp; autonomous systems</h2>
+            </div>
+            <button id="robot-expand-all" type="button" class="btn btn-secondary btn-sm">
+              Expand All
+            </button>
+          </div>
+
+          <div id="robot-subsystems-accordion" class="accordion-list"></div>
+        </div>
+      </section>
+
+      <!-- CAD & Design Documentation -->
+      <section class="section surface-light reveal">
+        <div class="container">
+          <div class="grid-2" style="align-items:center;gap:40px;">
+            <div id="robot-cad-media" class="card card-flush"></div>
+            <div>
+              <div class="kicker" style="margin-bottom:12px;">
+                <span>03. CAD &amp; Design Documentation</span>
+                <span aria-hidden="true">·</span>
+                <span data-robot="cadRevision">[REV X.X]</span>
+              </div>
+              <h2 style="margin-bottom:16px;">Parametric modeling before fabrication.</h2>
+              <p data-robot="cadSummary" style="color:var(--text-light-secondary);margin-bottom:20px;">
+                All structural plates and brackets are modeled prior to machining.
+              </p>
+              <div class="meta-line" style="margin-bottom:18px;">
+                <span>Primary CAD Tooling:</span>
+                <strong data-robot="cadSoftware">[Onshape / SolidWorks]</strong>
+              </div>
+              <ul
+                id="robot-cad-deliverables"
+                style="list-style:none;padding:0;margin:0 0 28px;border-top:1px solid var(--border-light);"
+              ></ul>
+              <a class="btn btn-primary" href="contact.html">Request Technical Packet</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+  </body>
+</html>
